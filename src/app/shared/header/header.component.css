@@ -1,0 +1,12 @@
+.espacio {
+ margin-left: auto;
+}
+.drawer-dusti-sidenav {
+ height: 200px;
+}
+
+.container-dusti-sidenav {
+ width: auto;
+ height: auto;
+ border: 1px solid #555;
+}

@@ -1,0 +1,17 @@
+<mat-drawer-container class="container-dusti-sidenav" autosize>
+  <div class="example-sidenav-content">
+    <button type="button" mat-mini-fab color="primary" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <strong> Welcome, User</strong>
+  </div>
+</mat-drawer-container>
+
+<mat-drawer #drawer mode="side">
+  <strong>Categories</strong>
+  <button type="button" mat-mini-fab color="primary" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <br>
+  <a routerLink="/authors" routerLinkActive="active">name</a>
+</mat-drawer>
