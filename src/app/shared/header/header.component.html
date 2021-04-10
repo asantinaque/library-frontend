@@ -1,6 +1,6 @@
 <mat-drawer-container class="container-dusti-sidenav" autosize>
-  <div class="example-sidenav-content">
-    <button type="button" mat-mini-fab color="primary" (click)="drawer.toggle()">
+  <div class="example-sidenav-content" color="primary">
+    <button type="button" mat-button mat-mini-fab color="primary" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <strong> Welcome, User</strong>
@@ -9,9 +9,18 @@
 
 <mat-drawer #drawer mode="side">
   <strong>Categories</strong>
-  <button type="button" mat-mini-fab color="primary" (click)="drawer.toggle()">
+  <button type="button" mat-button mat-mini-fab color="primary" (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
+  <mat-divider></mat-divider>
   <br>
-  <a routerLink="/authors" routerLinkActive="active">name</a>
+  <button mat-button color="accent" routerLink="/authors/authorList" routerLinkActive="active">
+    <mat-icon>contact_page</mat-icon>
+    Authors
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-button color="accent" routerLink="/books/bookList" routerLinkActive="active">
+    <mat-icon>contact_page</mat-icon>
+    Books
+  </button>
 </mat-drawer>

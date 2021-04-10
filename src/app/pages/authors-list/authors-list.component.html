@@ -1,16 +1,18 @@
-<mat-grid-list cols="4" rowHeight="100px">
- <mat-grid-tile
-     *ngFor="let tile of tiles"
-     [colspan]="tile.cols"
-     [rowspan]="tile.rows"
-     [style.background]="tile.color">
-   {{tile.text}}
- </mat-grid-tile>
-</mat-grid-list>
-
-
-<button (click)="getAuthors()">
-  TEST123
-</button>
-
-<p>hola</p>
+<div class="container">
+<table class="table table-dark table-bordered table-sm dusti-padding-thead table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Author Name</th>
+      <th>More</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let author of authors">
+      <th scope="row"> {{author.id}}</th>
+      <td> {{author.fullName}} </td>
+      <td> <a href="#"> See more...</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
